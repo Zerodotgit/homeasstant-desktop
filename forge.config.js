@@ -5,7 +5,7 @@ const path  = require('path')
 module.exports = {
   packagerConfig: {
     asar: true,
-    icon: path.join(__dirname, '.', 'src', 'asset', 'icon')
+    icon: path.join(__dirname, 'src', 'asset', 'icon')
   },
   rebuildConfig: {},
   makers: [
