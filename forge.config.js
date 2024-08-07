@@ -21,11 +21,21 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-deb',
-      config: {},
+      config: {
+        icon: {
+          scalable: path.join(__dirname, 'src', 'asset', 'icon.png'),
+          '48x48': path.join(__dirname, 'src', 'asset', 'icon.png'),
+        }
+      },
     },
     {
       name: '@electron-forge/maker-rpm',
-      config: {},
+      config: {
+        icon: {
+          scalable: path.join(__dirname, 'src', 'asset', 'icon.png'),
+          '48x48': path.join(__dirname, 'src', 'asset', 'icon.png'),
+        }
+      },
     },
   ],
   plugins: [
