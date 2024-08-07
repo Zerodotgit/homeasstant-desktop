@@ -5,7 +5,8 @@ function createWindow(){
     const mainWindow = new BrowserWindow({
         width:1280,
         height:960,
-        icon:path.join(__dirname, 'asset', 'icon.png')
+        icon:path.join(__dirname, 'asset', 'icon.png'),
+        autoHideMenuBar: true
     })
 
     mainWindow.loadURL('http://server.zerodots.net:8123/')
